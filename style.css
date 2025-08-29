@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  margin: 20px 0;
+  color: #333;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px 40px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Tricolor Corners */
+.corner {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  border: 8px solid transparent;
+  pointer-events: none;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  border-top-color: #FF9933;
+  border-left-color: #138808;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+  border-top-color: #FF9933;
+  border-right-color: #138808;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  border-bottom-color: #FF9933;
+  border-left-color: #138808;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  border-bottom-color: #FF9933;
+  border-right-color: #138808;
+}
+.site-footer {
+    background: linear-gradient(135deg, #1e1e2f, #2b2b40);
+    color: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 80px;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+    border-top: 2px solid #444;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-credit {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-contact {
+    font-size: 16px;
+    color: #cccccc;
+}
+
+.footer-contact a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+.india-icon {
+    position: fixed;
+    bottom: 30px;         /* distance from bottom */
+    right: 30px;          /* distance from right */
+    z-index: 1000;        /* stays on top */
+    width: 60px;
+    height: auto;
+    opacity: 0.85;
+    transition: transform 0.3s ease;
+}
+
+.india-icon:hover {
+    transform: scale(1.1);   /* zoom on hover */
+    opacity: 1;
+}
+
+.india-icon img {
+    width: 100%;
+    height: auto;
+    filter: hue-rotate(20deg) saturate(2); /* extra orange tint */
+}
